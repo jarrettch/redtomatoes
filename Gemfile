@@ -25,18 +25,27 @@ gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-# RSpec
-gem 'rspec-rails'
-
 # AngularJS
 gem 'angularjs-rails'
 
 # ngmin for Rails Asset Pipeline
 gem 'ngmin-rails'
 
+# HTTParty over here!
+gem 'httparty'
+
+# Rotten Tomatoes
+gem 'rottentomatoes'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'dotenv-rails'
 end
 
 # Use ActiveModel has_secure_password
