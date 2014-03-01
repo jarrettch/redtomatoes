@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redtomatoes</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div ng-view>
+<%= yield %>
+</div>
+  <%= javascript_include_tag "application" %>
+</body>
+</html>
