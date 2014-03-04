@@ -3,6 +3,7 @@ class MoviesController < ApplicationController
 
     def index
         @movie = RottenMovie.find(:title => "Scarface", :limit => 1)
-        respond_with(@movie)
+        @box_office = RottenList.find(:type => "box_office", :limit => 10)
+        respond_with({:movie => @movie, :box_office => @box_office})
     end
 end
