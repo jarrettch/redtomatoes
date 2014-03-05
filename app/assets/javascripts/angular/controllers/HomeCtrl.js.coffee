@@ -1,2 +1,3 @@
-redTomatoes.controller 'HomeCtrl', ($scope) ->
-	$scope.foo = 'bar'
+@redTomatoes.controller 'HomeCtrl', ['$scope', ($scope) ->
+	$scope.foo = "bar"
+]
