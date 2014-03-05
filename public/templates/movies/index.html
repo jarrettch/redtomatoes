@@ -1,3 +1,5 @@
-<ul ng-repeat="movie in movies">
-  <li>{{ movie.table.title }} <img src="{{ movie.table.posters.table.thumbnail}}"></li>
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div ng-repeat="movie in movies" class="col-md-12 movies repeater"><p>{{ movie.table.title }}</p> <p><img src="{{ movie.table.posters.table.thumbnail}}"></p></div>
+  </div>
+</div>
