@@ -1,7 +1,13 @@
-<div class="row">
-  <div ng-repeat="movie in movies.boxOfficeMovies" class="col-md-3 movies repeater"><p>{{ movie.title }}</p> <p>{{ movie.critics_score }}</p><p>{{movie.audience_score}}</p> <p><img src="{{ movie.posters.profile}}"></p></div>
-</div>
+<h2>Movies</h2>
 
-Movies
+<div class="row">
+  <div ng-repeat="movie in movies.boxOfficeMovies" class="col-md-4 movies repeater">
+    <p>{{ movie.title }}</p>
+    <p>{{ movie.critics_score }}</p>
+    <p>{{movie.audience_score}}</p>
+    <p><img ng-src="{{ movie.poster }}"></p>
+  </div>
+</div>
+<button type="button" class="btn btn-primary">Default</button>
 
 <a href="/">Back</a>

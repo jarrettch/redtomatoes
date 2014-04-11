@@ -1,33 +1,33 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
 
-.repeater.ng-enter,
-.repeater.ng-move {
-  -webkit-transition:1s linear all;
-  transition:1s linear all;
-  margin-left: 100%;
 
-  opacity:0;
-  -webkit-transform:scale(1.15)!important;
-  transform:scale(1.15)!important;
-}
-.repeater.ng-enter.ng-enter-active,
-.repeater.ng-move.ng-move-active {
-  opacity:1;
-}
+// .repeater.ng-enter,
+// .repeater.ng-move {
+//   -webkit-transition:1s linear all;
+//   transition:1s linear all;
+//   margin-left: 100%;
 
-.repeater.ng-enter-active {
-  margin-left: 0;
-}
+//   opacity:0;
+//   -webkit-transform:scale(1.15)!important;
+//   transform:scale(1.15)!important;
+// }
+// .repeater.ng-enter.ng-enter-active,
+// .repeater.ng-move.ng-move-active {
+//   opacity:1;
+// }
 
-.repeater.ng-leave {
-  -webkit-transition:1s linear all;
-  transition:1s linear all;
+// .repeater.ng-enter-active {
+//   margin-left: 0;
+// }
 
-  opacity:1;
-}
-.repeater.ng-leave.ng-leave-active {
-  opacity:0;
-}
+// .repeater.ng-leave {
+//   -webkit-transition:1s linear all;
+//   transition:1s linear all;
+
+//   opacity:1;
+// }
+// .repeater.ng-leave.ng-leave-active {
+//   opacity:0;
+// }

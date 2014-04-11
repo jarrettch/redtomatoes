@@ -20,5 +20,6 @@
 //= require angular-mocks
 //= require angular-sanitize
 //= require angular-touch
+//= require main
 //= require welcome
 //= require_tree .
