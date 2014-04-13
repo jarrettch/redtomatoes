@@ -3,9 +3,9 @@
 <div class="row">
   <div ng-repeat="movie in movies.boxOfficeMovies" class="col-md-4 movies repeater">
     <p>{{ movie.title }}</p>
+    <p><img ng-src="{{ movie.poster }}"></p>
     <p>{{ movie.critics_score }}</p>
     <p>{{movie.audience_score}}</p>
-    <p><img ng-src="{{ movie.poster }}"></p>
   </div>
 </div>
 <button type="button" class="btn btn-primary">Default</button>
