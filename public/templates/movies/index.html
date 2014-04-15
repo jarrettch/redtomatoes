@@ -1,25 +1,57 @@
 <h2>Movies</h2>
 
-<div class="row">
+<div class="row text-center">
   <div class="col-md-6">
     <h3>Box Office</h3>
-    <div ng-repeat="movie in movies.boxOfficeMovies" class="movies repeater">
-      <p>{{ movie.title }}</p>
+    <div ng-repeat="movie in movies.boxOfficeMovies" class="movies">
+      <div class="caption">
+        <h2>Critics: {{ movie.critics_score }}</h2>
+        <h2>Audience: {{ movie.audience_score }}</h2>
+      </div>
+      <!-- <h4>{{ movie.title }}</h4> -->
       <p><img ng-src="{{ movie.poster }}"></p>
-      <p>{{ movie.critics_score }}</p>
-      <p>{{ movie.audience_score }}</p>
     </div>
   </div>
   <div class="col-md-6">
     <h3>Top Rentals</h3>
-    <div ng-repeat="movie in movies.top_rentals" class="movies repeater">
-      <p>{{ movie.title }}</p>
+    <div ng-repeat="movie in movies.top_rentals" class="movies">
+      <div class="caption">
+        <h2>Critics: {{ movie.critics_score }}</h2>
+        <h2>Audience: {{ movie.audience_score }}</h2>
+      </div>
       <p><img ng-src="{{ movie.poster }}"></p>
-      <p>{{ movie.critics_score }}</p>
-      <p>{{ movie.audience_score }}</p>
+
     </div>
   </div>
 </div>
 <button type="button" class="btn btn-primary">Default</button>
 
 <a href="/">Back</a>
+
+<style type="text/css">
+  .movies {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(0, 0, 0, 0.25);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: table-cell;
+    visibility: hidden;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+  }
+
+  .movies:hover .caption {
+    visibility: visible;
+  }
+
+</style>
+
